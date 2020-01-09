@@ -1,11 +1,10 @@
 Summary: X.Org X11 libXpm runtime library
 Name: libXpm
-Version: 3.5.8
+Version: 3.5.10
 Release: 2%{?dist}
 License: MIT
 Group: System Environment/Libraries
 URL: http://www.x.org
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 Source0: ftp://ftp.x.org/pub/individual/lib/%{name}-%{version}.tar.bz2
 
@@ -46,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc AUTHORS COPYING CHANGES ChangeLog
+%doc AUTHORS COPYING ChangeLog
 %{_libdir}/libXpm.so.4
 %{_libdir}/libXpm.so.4.11.0
 
@@ -62,6 +61,18 @@ rm -rf $RPM_BUILD_ROOT
 #%{_mandir}/man1/*.1x*
 
 %changelog
+* Thu Jul 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.5.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Thu Mar 08 2012 Adam Jackson <ajax@redhat.com> 3.5.10-1
+- libXpm 3.5.10
+
+* Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.5.8-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* Mon Feb 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.5.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
 * Tue Oct 13 2009 Adam Jackson <ajax@redhat.com> 3.5.8-2
 - libXpm 3.5.8
 
