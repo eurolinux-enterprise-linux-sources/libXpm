@@ -1,7 +1,7 @@
 Summary: X.Org X11 libXpm runtime library
 Name: libXpm
-Version: 3.5.10
-Release: 5.1%{?dist}
+Version: 3.5.11
+Release: 3%{?dist}
 License: MIT
 Group: System Environment/Libraries
 URL: http://www.x.org
@@ -64,11 +64,18 @@ rm -rf $RPM_BUILD_ROOT
 #%{_mandir}/man1/*.1x*
 
 %changelog
-* Wed Feb 12 2014 Adam Jackson <ajax@redhat.com> 3.5.10-5.1
-- Mass rebuild
+* Sun Aug 17 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.5.11-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
 
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.5.10-5
-- Mass rebuild 2013-12-27
+* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.5.11-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* Wed Feb 12 2014 Adam Jackson <ajax@redhat.com> 3.5.11-1
+- libXpm 3.5.11
+- Drop pre-F18 changelog
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.5.10-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
 * Thu Mar 07 2013 Peter Hutterer <peter.hutterer@redhat.com> - 3.5.10-4
 - autoreconf for aarch64
